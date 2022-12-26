@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=5">
+  <meta name="description" content="Author: Vítor Jungles, Details: A practical and easy timer">
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="preload" as="style">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+  <title>Timer</title>
+</head>
+<body>
+  <ul>
+    <li><a class="active" href="#Timer">Timer</a></li>
+    <li><a href="stopwatch.html">Stop Watch</a></li>
+  </ul>
+  <header>
+    <h1>Timer</h1>
+  </header>
+  <main>
+    <section id="time">
+      <div class="container">
+        <div class="user-input">
+          <h2 id="alert">Enter the desired time below:</h2>
+          <div class="data-input">
+            <input id="hours" name="data" type="text" maxlength="2" value="00">
+            :
+            <input id="minutes" name="data" type="text" maxlength="2" value="00">
+            :
+            <input id="seconds" name="data" type="text"  maxlength="2" value="00">
+          </div>
+        </div>
+      </div>
+      <div class="buttons">
+        <input class="button" id="initial" type="button" value="Start">
+        <input class="button" id="reset" type="button" value="Reset">
+      </div>
+    </section>
+  </main>
+  <script src="timer.js"></script>
+</body>
+</html>
